@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header */
+
+.nav{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;   /* tira as bolinhas da lista*/
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.nav-list a{
+    text-decoration: none; /*tira o sublinhado do texto*/
+    color: aliceblue;
+    padding: 20px;
+}
+
+.nav-list a:hover{
+    color: gray;
+}
+
+/* Fim do Header */
+
+/* Main */
+
+.main{
+    width: 100%;
+    background-color: #181818;
+    height: calc(100vh - 80px);
+    background-image: url(../img/programador.png);
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    font-size: 52px;
+}
+
+.main h1{
+    color: white;
+}
+
+.main p{
+    font-size: 25px;
+    font-style: italic;
+    color: cornflowerblue;
+    margin: 10px 0 10px 0;
+
+}
+
+.botao-projetos{
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+    padding: 13px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.7s;
+}
+
+.main a{
+    text-decoration: none;
+    color: black;
+}
+
+.botao-projetos:hover{
+    transform: scale(1.1);
+
+}
+
+/* fim main */
+
+/* sobre */
+
+.sobre{
+    background-color: floralwhite;
+    width: 100%;
+    padding: 80px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre div{
+    max-width: 50%;
+    padding-right: 40px;
+
+}
+
+.sobre img{
+    max-width: 450px;
+    border-radius: 5px;
+}
+
+.sobre div h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* fim do sobe */
+
+/*projetos */
+
+.projetos{
+    background-color: floralwhite;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.projetos h2{
+    font-size: 22px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.projetos p{
+    margin-bottom: 60px;
+    font-style: italic;
+}
+
+.lista-projetos{
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+.projetos img{
+    width: 23%;
+    margin: 0 0.5%;
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+.projetos img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.orcamento{
+    background-color: black;
+    border: 0;
+    color: aliceblue;
+    padding: 12px 28px;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.7s;
+}
+
+.orcamento:hover{
+    background-color: #181818;
+    color: gray;
+    transform: scale(1.04);
+}
+
+/* projetos fim */
+/* footer */
+
+footer{
+    background-color: black;
+    width: 100%;
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer p{
+    margin-left: 10px;
+}
+
+/* fim do footer */
+
+/* responsividade */
+
+@media (max-width: 1050px){
+    /* main */
+    .main h1{
+        font-size: 45px;
+    }
+
+    .main p{
+        font-size: 18px;
+    }
+
+    .main{
+        background-size: cover;
+    }
+    /* fim main */
+
+    /* sobre */
+
+    .sobre{
+        flex-direction: column;
+        padding: 80px 0 0 0;
+    }
+
+    .sobre div{
+        max-width: 80%;
+    }
+
+    .sobre div h2{
+        font-size: 45px;
+    }
+
+    .sobre img{
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    /* fim do sobre */ 
+
+    /* projetos */
+
+    .projetos img{
+        width: 27.5%;
+    }
+
+    /* fim projetos */
+
+    /* footer */
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer h3{
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    .footer p{
+        margin: 0;
+    }
+
+    /* fim footer */
+
+}

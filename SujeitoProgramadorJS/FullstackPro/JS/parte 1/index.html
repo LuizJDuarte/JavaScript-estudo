@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JS parte 1</title>
+</head>
+<body>
+
+
+    <!--
+        <h2 id="area">
+        Bem vindo!
+    </h2>
+
+    <button onclick="entrar()">Acessar</button>
+    -->
+
+    <!--
+        <h2>Escolha a bebida</h2>
+    <ul>
+        <li>1 - Suco</li>
+        <li>2 - Refrigerante</li>
+        <li>3 - Cerveja</li>
+        <li>4 - Àgua</li>
+    </ul>
+
+    <button onclick="pedir()">Pedir</button>
+    -->
+
+    <header class="cabecalho">
+            <h1>Calculadora de IMC</h1>
+    </header>
+
+    <main class="meio">
+        <form onsubmit="calcular(event)" class="form">
+
+            <label >Informe seu peso(em KG)</label>
+            <input type="number" class="inputs" name="peso" id="peso" placeholder="Ex: 65.5" step="0.01" required>
+
+            <label>Informe sua altura(em Metros)</label>
+            <input type="number" class="inputs" name="altura" id="altura" placeholder="Ex: 1.75" step="0.01" min="0.20" max="2.50" required>
+
+            <input class="button" type="submit" value="Calcular">
+        </form>
+        <article id="resultado">
+
+        </article>
+    </main>
+
+    
+
+    </article>
+
+    <footer class="footer">
+        <p>Luiz Duarte - </p>
+        <p> Todos os direitos reservados</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

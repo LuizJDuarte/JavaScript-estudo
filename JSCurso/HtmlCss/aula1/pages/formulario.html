@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form>
+
+        <h2><strong>Informações pessoais:</strong></h2>
+
+        <label for="first-name">Primeiro nome:</label>
+        <input type="text" placeholder="Digite seu primeiro nome" id="first-name" name="first-name" required> <br> <br>
+
+        <label for="last-name">Último nome</label>
+        <input type="text" placeholder="Digite seu último nome" id="last-name" name="last-name" required> <br> <br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email"> <br> <br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" minlength="4" maxlength="12"><br> <br>
+
+        <label for="data-nascimento">Data de nascimento:</label>
+        <input type="datetime-local" name="data-nascimento" id="data-nascimento"><br> <br>
+
+        <h2><strong>Informações educacionais:</strong></h2>
+
+        <label for="nivel">
+            <strong>Qual seu nível na programação?</strong>
+        </label><br>
+
+        <input type="radio" name="nivel" value="iniciante" checked>Sou iniciante 
+        <input type="radio" name="nivel" value="intermediario" >Sou intermediário
+        <input type="radio" name="nivel" value="avancado" >Sou avançado/experiente <br><br>
+
+        <label for="escolaridade">
+            <strong>Qual a sua escolaridade?</strong>
+        </label><br>
+        <select id="escolaridade" required>
+            <option selected disabled value="">Selecione</option>
+            <option>Ensino básico</option>
+            <option>Ensino médio</option>
+            <option>Ensino superior</option>
+            <option>Pos Graduação</option>
+        </select> <br><br>
+
+
+        <label for="checkbox"><strong>Quais tecnologias você conhece?</strong></label> <br>
+
+        <input type="checkbox" name="tecnologia1" value="HTML">
+        <label for="tecnologia1">HTML</label>
+
+        <input type="checkbox" name="tecnologia2" value="CSS">
+        <label for="tecnologia2">CSS</label>
+
+        <input type="checkbox" name="tecnologia3" value="JavaScript">
+        <label for="tecnologia3">JavaScript</label>
+
+        <input type="checkbox" name="tecnologia4" value="PHP">
+        <label for="tecnologia4">PHP</label>
+
+        <input type="checkbox" name="tecnologia5" value="React">
+        <label for="tecnologia5">React</label> <br><br>
+
+        <label for="curso"><strong>Qual curso você já fez?</strong></label> <br>
+        <input list="cursos" name="curso" placeholder="Selecione o curso..."> 
+        <datalist id="cursos">
+            <option value="Nenhum"></option>
+            <option value="Outro curso"></option>
+            <option value="Udemy"></option>
+            <option value="Rockeseat"></option>
+            <option value="Hotmart"></option>
+            <option value="FIAP"></option>
+        </datalist>   <br><br>
+
+        <input type="submit" value="Cadastrar"><br><br>
+    </form>
+
+    <a href="../index.html"><input type="button" value="Voltar"></a>
+    <!-- <p><a href="../index.html">Voltar</a></p> -->
+</body>
+</html>

@@ -1,0 +1,72 @@
+*{                    /*pega todos os elementos do html*/
+    margin: 0px auto; /*tira toda a margem dos itens*/
+    font-family: sans-serif; /*bota uma fonte não serifada*/
+    box-sizing: border-box;
+}
+
+body{                   /*aplica em tudo que está no body*/
+    background-color: black;/*altera a cor*/
+    height: 100vh;                          /*100vh = full height*/
+    display: flex;                          /*display fica flex*/
+    justify-content: center;                /*alinha horizontal - lados*/
+    align-items: center;                    /*alinha vertical - cima baixo*/
+    flex-direction: column;                 /*Um item abaixo do outro em coluna*/
+}
+
+.container{
+    /*background-color: green; /*Cor container*/
+    max-width: 720px;   /*Tamanho máximo container*/
+    display: flex;      /*display fica flex*/
+    flex-direction: column; /*muda a direção do flex pra coluna*/
+    justify-content: center; /*alinha horizontal - lados*/
+    align-items: center;    /*alinha vertical - cima baixo*/
+    padding: 0 14px;        /*distância interna aos itens*/
+    border-radius: 5px;
+}
+
+.logo{
+    max-width: 230px;
+}
+
+.title{
+    text-align: center;
+    color: #fff;
+    margin: 24px 0;
+}
+
+.form label{
+    color: #fff;
+    font-size: 20px;
+}
+
+.input{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 0 14px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.button{
+    background-color: rgb(45, 84, 225);
+    color: #fff;
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.result{
+    background-color: green;
+    max-width: 500px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 4px;
+}

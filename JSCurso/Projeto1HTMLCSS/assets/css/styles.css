@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: "Roboto", serif;
+}
+
+.navbar{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.list{
+    margin: 60px;
+    list-style: none;
+}
+
+.list a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.list a:hover{
+    color: gray;
+    background-color: rgb(51, 45, 45);
+}
+
+.article-main{
+    width: 100%;
+    background-image: url("/JSCurso/Projeto1HTMLCSS/assets/img/background_pic.png");
+    height: calc(100vh - 60px);
+    display: flex;
+    padding-left: 15%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.article-main h1{
+    color: rgb(255, 255, 255);
+    font-size: 85px;
+}
+
+.article-main button{
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    
+}
+
+.article-main a button{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+.article-main button:hover{
+    background-color: rgb(116, 117, 117);
+    transform: scale(1.05);
+    transition: 0.9s;
+}
+
+.sobre{
+    width: 100%;
+    padding: 80px 10% 80px 10%; /*Top right bottom left */
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+.sobre div{
+    padding: 30px;
+}
+
+.sobre div h2{
+    font-size: 50px;
+}
+
+.sobre div p{
+    padding: 5px;
+}
+
+.sobre img{
+    max-width: 400px;
+    height: 600px;
+}
+
+.projetos{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projetos h2{
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.projetos-img{
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+.projetos-img img{
+    max-width: 300px;
+    padding: 10px 5% 10px 5%;
+    opacity: 0.5;
+}
+
+.projetos-img img:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.projetos a button{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.projetos a button:hover{
+    background-color: rgb(116, 117, 117);
+    transform: scale(1.05);
+    transition: 0.9s;
+}
